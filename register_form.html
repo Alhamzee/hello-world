@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login Page with Slider</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -12,8 +12,23 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            background-color: #f4f4f4;
         }
-       
+        .header {
+            background-color: #aa4909;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #201f1f;
+            margin: 0 15px;
+            text-decoration: none;
+        }
      /*   .slider {
             flex: 1;
             position: relative;
@@ -33,7 +48,7 @@
             height: 100vh;
             object-fit: cover;
         } */
-        .login-container {
+      .login-container {
             width: 400px;
             padding: 30px;
             background: rgba(255, 255, 255, 0.9);
@@ -48,25 +63,28 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        } 
+        
+        h2 {
+            text-align: center;
+            color: #333;
         }
-        .login-container h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            
+        .form-group {
+            margin-bottom: 15px;
         }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
+        .form-group label {
+            display: block;
             margin-bottom: 5px;
             color: #555;
-            width: 90%;
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid #add;
-            border-radius: 5px;
-            font-size: 16px; 
         }
-        .login-container button {
-            transition: background-color 0.3s; 
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            
+        }
+        .button {
             width: 100%;
             padding: 10px;
             background: #28a745;
@@ -76,64 +94,113 @@
             cursor: pointer;
             font-size: 16px;
         }
-        .login-container button:hover {
+        .button:hover {
             background: #218838;
+        }
+      /*    .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
         }
         .links {
             margin-top: 15px;
         }
         .links a {
-            color: #555;
+            color: #007bff;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s;
         }
         .links a:hover {
             text-decoration: underline;
-        }
+        } 
         .footer {
+            background-color: #f1f1f1;
+            color: #333;
             text-align: center;
             padding: 10px;
-            background: #aa4909;
-            color: #fff;
             position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+        } */
     </style>
 </head>
 <body>
- <!----   
-    </div>
+    <div class="header">Modibbo Adama University Service Portal</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="index.html">Login</a>
+      </nav>
     
-
-   <div class="slider">
+  <!--    <div class="slider">
         <div class="slides">
             <div class="slide"><img src="https://via.placeholder.com/800x600?text=Slide+1" alt="Slide 1"></div>
             <div class="slide"><img src="https://via.placeholder.com/800x600?text=Slide+2" alt="Slide 2"></div>
             <div class="slide"><img src="https://via.placeholder.com/800x600?text=Slide+3" alt="Slide 3"></div>
         </div>
-    </div> 
-
-<img src="images/mau2.jpeg" alt="university logo" height="50" width="50"> </a-->
+    </div>
+--> 
     <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
+  <!--        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
-        
         <div class="links">
             <a href="#" class="forgot-password">Forgot Password?</a>
-            <a href="register_form.html" class="register">Register</a>
-        </div>
-    </div>
-<!--
-    <div class="footer">Software Dev. & Audit Staff.</div>
+            <a href="#" class="register">Register</a>
+        </div> --> 
+    
 
-   <script>
+   
+    <h2>User Registration</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" required placeholder="Enter your contact number">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+        </div>
+        <button type="submit" class="button">Register</button>
+    </form> 
+
+</div>
+    
+
+    <script>
         let currentIndex = 0;
         const slides = document.querySelector('.slides');
         const totalSlides = document.querySelectorAll('.slide').length;
@@ -144,18 +211,6 @@
         }
 
         setInterval(showNextSlide, 3000); // Change slide every 3 seconds
-    </script>  </a-->
-    <script>
-        document.getElementById ('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const username = document.getElementById ('username').value;
-            const password = document.getElementById ('password').value;
-            if (username === 'user' && password === 'pass') {
-                window.location.href = 'home.html'
-            } else {
-                alert('Invalid username or password');
-            }
-        });
     </script>
 </body>
 </html>
