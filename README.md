@@ -1,5 +1,1 @@
-Hello World repository for Git tutorial
-This is an example repository for the Git tutoial
-
-This repository is built step by step in the tutorial.
-This is a first attemp on git
+The University Services Portal is a comprehensive web-based platform designed to handle various services offered by the university to the general public, focusing on laboratory services, academic publishing services, and equipment maintenance services.
